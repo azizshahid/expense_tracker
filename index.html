@@ -14,7 +14,7 @@
           <h1>Expense Tracker</h1>
           <div class="balance">
             <h2 id="netAmount">रु 0</h2>
-            <h3>Your Balance</h3>
+            <h3>Total Expense</h3>
           </div>
         </section>
         <div class="transaction_container">
@@ -38,12 +38,12 @@
           <form id="transactionForm">
             <div class="inputs">
               <div class="form_control">
-                <label for="text">Text</label>
+                <label for="name">Name</label>
                 <input
                   placeholder="Enter Description"
                   type="text"
-                  name="text"
-                  id="text"
+                  name="name"
+                  id="name"
                   required
                 />
               </div>
@@ -54,18 +54,49 @@
                   type="number"
                   name="amount"
                   id="amount"
+                  step="0.01"
                   required
                 />
               </div>
+              <div class="form_control">
+                <label for="decription">Description</label>
+                <input
+                  placeholder="Describe your purchase"
+                  type="description"
+                  id="description"
+                  name="description"
+                />
+              </div>
+              <div class="form_control">
+                <label for="date">Date</label>
+                <input
+                  placeholder="Enter date"
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                />
+              </div>
+              <div class="form_control">
+                <select name="Category" id="category">
+                  <option value="eat_out">Eat Out</option>
+                  <option value="take_away">Take Away</option>
+                  <option value="grocery">Grocery</option>
+                </select>
+              </div>
+              <select name="avoidable" id="avoidable">
+                <input name="avoidable" type="radio" id="avoidable">
+                <input name="avoidable" type="radio" id="avoid" >
+              </select>
             </div>
 
             <div class="buttons_container">
-              <button type="submit" id="earnBtn">
+              <!-- <button type="submit" id="earnBtn">
                 <p id="earning">रु 0</p>
                 <p>Earnings</p>
-              </button>
+              </button> -->
               <button type="submit" id="expBtn">
-                <p id="expense">रु 0</p>
+                <!-- <p id="expense">रु 0</p> -->
                 <p>Expense</p>
               </button>
             </div>

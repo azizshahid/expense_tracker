@@ -30,7 +30,7 @@ body {
 }
 
 .box {
-  width: 450px;
+  width: 600px;
   height: 100vh;
   padding: 20px;
   background-color: var(--white);
