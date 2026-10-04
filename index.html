@@ -59,10 +59,10 @@
                 />
               </div>
               <div class="form_control">
-                <label for="decription">Description</label>
+                <label for="description">Description</label>
                 <input
                   placeholder="Describe your purchase"
-                  type="description"
+                  type="text"
                   id="description"
                   name="description"
                 />
@@ -84,10 +84,12 @@
                   <option value="grocery">House Expense</option>
                 </select>
               </div>
-              <select name="avoidable" id="avoidable">
-                <input name="avoidable" type="radio" id="avoidable">
-                <input name="avoidable" type="radio" id="avoid" >
-              </select>
+              <div class="form_control">
+                <select name="avoid_tab" id="avoid_tab">
+                  <option value="avoidable" id="avoidable">Avoidable</option>
+                  <option value="unavoidable" id="avoid">unavoidable</option>
+                </select>
+              </div>
             </div>
 
             <div class="buttons_container">
@@ -104,6 +106,6 @@
         </section>
       </div>
     </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
